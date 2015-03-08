@@ -22,6 +22,15 @@
         <role>developer</role>
       </roles>
     </developer>
+    <developer>
+      <id>galihlasahido</id>
+      <name>Galih Lasahido</name>
+      <email>galih.lasahido@gmail.com</email>
+      <url>http://www.linkedin.com/in/galihlasahido</url>
+      <roles>
+          <role>developer</role>
+      </roles>
+    </developer>
   </developers>
 
   <dependencies>
