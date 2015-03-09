@@ -1,49 +1,110 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>org.bareng</groupId>
-  <artifactId>bpustaka</artifactId>
-  <packaging>war</packaging>
-  <version>1.0-SNAPSHOT</version>
-  <name>bpustaka Maven Webapp</name>
-  <url>http://maven.apache.org</url>
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.bareng</groupId>
+    <artifactId>bpustaka</artifactId>
+    <packaging>war</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <name>bpustaka Maven Webapp</name>
+    <url>http://maven.apache.org</url>
 
-  <developers>
-    <developer>
-      <id>newm4n</id>
-      <name>Ferdinand Neman</name>
-      <email>ferdinand.neman@gmail.com</email>
-      <url>http://www.linkedin.com/in/fneman</url>
-      <organization>MayLab Snd Bhd</organization>
-      <organizationUrl>http://www.maylab.my</organizationUrl>
-      <roles>
-        <role>architect</role>
-        <role>mentor</role>
-        <role>developer</role>
-      </roles>
-    </developer>
-    <developer>
-      <id>galihlasahido</id>
-      <name>Galih Lasahido</name>
-      <email>galih.lasahido@gmail.com</email>
-      <url>http://www.linkedin.com/in/galihlasahido</url>
-      <roles>
-          <role>developer</role>
-      </roles>
-    </developer>
-  </developers>
+    <developers>
+        <developer>
+            <id>endymuhardin</id>
+            <name>Endy Muhardin</name>
+            <email>endy.muhardin@gmail.com</email>
+            <url>http://software.endy.muhardin.com/</url>
+            <organization>Artivisi</organization>
+            <organizationUrl>http://artivisi.com/</organizationUrl>
+            <roles>
+                <role>architect</role>
+                <role>mentor</role>
+                <role>developer</role>
+            </roles>
+        </developer>
+        <developer>
+            <id>galihlasahido</id>
+            <name>Galih Lasahido</name>
+            <email>galih.lasahido@gmail.com</email>
+            <url>http://www.linkedin.com/in/galihlasahido</url>
+            <roles>
+                <role>developer</role>
+            </roles>
+        </developer>
+        <developer>
+            <id>dhaowoods</id>
+            <name>Muhammad Dawud</name>
+            <email>muhammad.dawud91@gmail.com</email>
+            <url>http://id.linkedin.com/pub/muhammad-dawud/11/a67/603</url>
+            <roles>
+                <role>developer</role>
+            </roles>
+        </developer>
+    </developers>
 
-  <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
-    </dependency>
-  </dependencies>
-
-
-  <build>
-    <finalName>bpustaka</finalName>
-  </build>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate.javax.persistence</groupId>
+            <artifactId>hibernate-jpa-2.1-api</artifactId>
+            <version>${hibernate-jpa-2.1-api.version}</version>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>${postgresql-jdbc.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>joda-time</groupId>
+            <artifactId>joda-time</artifactId>
+            <version>${joda-time.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jadira.usertype</groupId>
+            <artifactId>usertype.core</artifactId>
+            <version>${usertype.jadira.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-jpa</artifactId>
+            <version>${spring.data.jpa.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>${guava.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>joda-time</groupId>
+            <artifactId>joda-time-jsptags</artifactId>
+            <version>1.1.1</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <spring.version>4.1.5.RELEASE</spring.version>
+        <hibernate-jpa-2.1-api.version>1.0.0.Final</hibernate-jpa-2.1-api.version>
+        <joda-time.version>2.7</joda-time.version>
+        <usertype.jadira.version>3.2.0.GA</usertype.jadira.version>
+        <spring.data.jpa.version>1.7.2.RELEASE</spring.data.jpa.version>
+        <guava.version>18.0</guava.version>
+        <postgresql-jdbc.version>9.4-1201-jdbc41</postgresql-jdbc.version>
+    </properties>
+    <build>
+        <finalName>bpustaka</finalName>
+    </build>
 </project>

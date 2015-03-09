@@ -13,3 +13,4 @@ hs_err_pid*
 source-code/bpustaka.iml
 source-code/bpustaka.ipr
 source-code/bpustaka.iws
+/source-code/target/
