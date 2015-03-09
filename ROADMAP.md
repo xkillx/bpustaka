@@ -8,7 +8,7 @@ This application will be used by librarian for:
 - Entry data books
 - Entry borrowing book
 - Entry return book
-- Entry data users(admin and officer)
+
 
 Members can using this application for:
 - Searching books with a specific criteria (e.g title, author, topic or etc)
