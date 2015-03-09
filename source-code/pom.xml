@@ -38,7 +38,16 @@
             <url>http://id.linkedin.com/pub/muhammad-dawud/11/a67/603</url>
             <roles>
                 <role>developer</role>
-            </roles>
+            </roles>    
+        </developer>
+         <developer>
+            <id>robert589</id>
+            <name>Robert Limanto</name>
+            <email>r_limanto@hotmail.com</email>
+            <url>https://sg.linkedin.com/in/robertlimanto</url>
+            <roles>
+                <role>developer</role>
+            </roles>    
         </developer>
     </developers>
 
