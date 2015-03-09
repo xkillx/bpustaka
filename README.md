@@ -8,7 +8,9 @@ what problem it solves : Can borrow and return books
 How to build the project : 
 	Write Roadmap (feature list)->MockUp UI-> DbSchema->Ui Dummy
 
-How to Contribute : using github + git Tools to commit project 
+How to Contribute :
+	using github + git Tools to commit project 
 
-How to Contact Project Maintainer : using Social Media (Whatsapp, group Facebook)
+How to Contact Project Maintainer : 
+	using Social Media (Whatsapp, group Facebook)
 
