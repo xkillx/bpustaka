@@ -45,6 +45,7 @@ Members can using this application for:
     - Recapitulate total of book
     - Recapitulate of members
 	- Booking report per books booking transaction
+	- Recapitulate of user
 
 - Personalization
 
