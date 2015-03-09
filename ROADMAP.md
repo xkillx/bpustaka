@@ -44,6 +44,7 @@ Members can using this application for:
     - History borrowing and return books by member
     - Recapitulate total of book
     - Recapitulate of members
+	- Booking report per books booking transaction
 
 - Personalization
 
