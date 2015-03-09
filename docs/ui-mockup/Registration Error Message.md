@@ -16,7 +16,7 @@
 	- Password harus diisi
 
 - Type id
-	-
+	- Pilih type identitas
 
 - ID
 	- Nomor id tidak boleh kosong
