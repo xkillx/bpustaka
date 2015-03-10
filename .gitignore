@@ -13,5 +13,5 @@
 /source-code/bpustaka.ipr
 /source-code/bpustaka.iws
 /source-code/target/
-/nb-configuration.xml
-/lib/
+/source-code/nb-configuration.xml
+/source-code/lib/
