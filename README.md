@@ -17,4 +17,4 @@ How to Contribute :
 	Using github + git Tools to commit project 
 
 How to Contact Project Maintainer : 
-	Using Social Media (Whatsapp, Facebook Group)
+	Using Social Media (Whatsapp Messanger, Facebook Group)
