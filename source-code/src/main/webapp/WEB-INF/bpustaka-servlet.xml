@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/tx
+        http://www.springframework.org/schema/tx/spring-tx.xsd">
+    
+    <tx:annotation-driven transaction-manager="transactionManager1"  />
+    <bean id="transactionManager1" class="org.springframework.orm.jpa.JpaTransactionManager">
+        <property name="entityManagerFactory" ref="entityManagerFactory1" />
+    </bean>
+    <bean id="entityManagerFactory1" class="org.springframework.orm.jpa.LocalEntityManagerFactoryBean">
+        <property name="persistenceUnitName" value="bpustakaPU"/>
+    </bean>
+    <bean id="penggunaService" class="org.bareng.bpustaka.services.PenggunaService">
+        <property name="koneksi">
+            <bean class="org.springframework.orm.jpa.support.SharedEntityManagerBean">
+                <property name = "entityManagerFactory" ref="entityManagerFactory1"/> 
+            </bean>
+        </property>
+    </bean>
+    <bean name="/pengguna.html" class="org.bareng.bpustaka.controllers.PenggunaController">
+        <property name="penggunaService" ref="penggunaService"/>
+    </bean>
+    <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
+        <property name="prefix" value="/"/>
+        <property name="suffix" value=".jsp"/>
+    </bean>
+</beans>

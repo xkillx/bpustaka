@@ -8,9 +8,10 @@
 *.war
 *.ear
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-source-code/bpustaka.iml
-source-code/bpustaka.ipr
-source-code/bpustaka.iws
+/hs_err_pid*
+/source-code/bpustaka.iml
+/source-code/bpustaka.ipr
+/source-code/bpustaka.iws
 /source-code/target/
+/nb-configuration.xml
+/lib/
