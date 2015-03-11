@@ -2,14 +2,14 @@
   Project Belajar Java - Manajemen Perpustakaan
 
 ## What problem it solves :
-   Librarian
+1. Librarian
    - Managing book catalouge
    - Create report
    - Monitor borrowed book
    - Monitor registered member
    - Managing borrowing and return book
 
-   Member
+2. Member
    - Check book status
    - Search Book
    - Borrowed book via Online   
