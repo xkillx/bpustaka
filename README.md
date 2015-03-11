@@ -2,7 +2,18 @@
   Project Belajar Java - Manajemen Perpustakaan
 
 ## What problem it solves :
-   Can borrow and return books. Prospective members can register online and if they already registered then they will be able to borrow books online.
+   Librarian
+   - Managing book catalouge
+   - Create report
+   - Monitor borrowed book
+   - Monitor registered member
+   - Managing borrowing and return book
+
+   Member
+   - Check book status
+   - Search Book
+   - Borrowed book via Online   
+
 
 ## Who will use it :
    Only members can borrow and return books, officer or librarian only manage books catalogue and submit report, interaction can be done online.
