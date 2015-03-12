@@ -1,12 +1,12 @@
-# Peminjaman
+# Loan
 
-## Form peminjaman
-Dalam form peminjam ada 2 button yang dibuat untuk keterangan dialog selanjutnya. Antara lain:
-- button Cari
-- button Tambah
+## Form of borrowing
+In the form there are 2 buttons borrowers made ??for further information dialog . Among others:
+- Search button
+- Add a button
 
-Button Cari adalah button untuk mendapatkan member yang telah terdaftar pada sistem. button cari akan menampilkan dialog dengan pencarian nama dan id member. setelah didapatkan hasilnya akan ditampilkan pada textarea form peminjaman.
-Contoh bisa dilihat di Peminjaman (button cari default).png dan Peminjaman (button cari focus search).png
+Search button is a button to get the member who has been registered on the system . search button will display a dialog to search the name and id member. after the obtained results will be displayed in the textarea form of borrowing .
+Examples can be seen in the Loan ( the default search button ) .png and Loan ( focus search button search ) .png
 
-Button Tambah adalah button untuk medapatkan pilihan buku apa saja yang akan dipinjam. sama halnya dengan button cari, hasil nya akan ditampilkan pada tabel form peminjaman.
-Contoh dilihat di Peminjaman (button buku default).png dan Peminjaman (button buku focus search).png
+Add a button is a button to obtain any selection of books to be borrowed . as well as the search button , its results are displayed in table form of borrowing .
+Examples seen in Lending ( default book button ) .png and Loan ( button focus book search ) .png
