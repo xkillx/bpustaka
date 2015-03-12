@@ -40,6 +40,17 @@
                 <role>developer</role>
             </roles>
         </developer>
+        <developer>
+            <id>byanto</id>
+            <name>Budi Yanto</name>
+            <email>contact@budiyanto.info</email>
+            <url>http://www.linkedin.com/in/byanto</url>
+            <organization>KNIME.com GmbH</organization>
+            <organizationUrl>https://www.knime.org/</organizationUrl>
+            <roles>
+                <role>developer</role>
+            </roles>
+        </developer>
     </developers>
     <properties>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
