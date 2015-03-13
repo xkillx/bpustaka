@@ -8,23 +8,5 @@
 *.war
 *.ear
 
-/hs_err_pid*
-/source-code/bpustaka.iml
-/source-code/bpustaka.ipr
-/source-code/bpustaka.iws
-/source-code/target/
-/source-code/nb-configuration.xml
-/source-code/lib/
-
-# Directories
-/source-code/target
-
-# OSX Files
-.DS_Store
-/source-code/.DS_Store
-
-# Eclipse
-/source-code/.project
-/source-code/.classpath
-/source-code/.settings
-/source-code/.metadata
+# Maven Ignore
+target
