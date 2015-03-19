@@ -37,4 +37,4 @@
    - Open a pull request on Github.
 
 ## How to Contact Project Maintainer : 
-   Using Social Media (Whatsapp Messenger, Facebook Group)
+   Using Social Media (Whatsapp Messenger,, Facebook Group)
