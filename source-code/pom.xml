@@ -60,6 +60,15 @@
                 <role>developer</role>
             </roles>
         </developer>
+        <developer>
+            <id>justhardinal</id>
+            <name>Hardinal Fahmi</name>
+            <email>just.hardinal@gmail.com</email>
+            <url>http://github.com/justhardinal</url>
+            <roles>
+                <role>developer</role>
+            </roles>
+        </developer>
     </developers>
 
     <dependencies>
