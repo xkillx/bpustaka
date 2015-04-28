@@ -1,5 +1,7 @@
 package org.bpustaka.entity;
 
+import java.util.Date;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -7,147 +9,137 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
+
+import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.validator.constraints.NotEmpty;
 
-@Entity @Table(name="member")
+@Entity
+@Table(name = "member")
 public class MemberEntity {
 
-    @Id
-    @GeneratedValue(generator = "system-uuid")
-    private String id;
-    
-    @NotNull @NotEmpty @Size(min = 4)
-    @Column(name="iduser", unique = true, nullable = false)
-    private String iduser;
-    
-    @NotNull @NotEmpty @Size(max = 10)
-    @Column(name="username", unique = true, nullable = false)
-    private String username;
-    
-    @NotNull @NotEmpty @Size(max = 10)
-    @Column(name="password", unique = true, nullable = false)
-    private String password;
-    
-    @NotNull @NotEmpty @Size(max = 50)
-    @Column(name="fullname", unique = true, nullable = false)
-    private String fullname;
-    
-    @NotNull @NotEmpty @Size(min= 4)
-    @Column(name="address", unique = true, nullable = false)
-    private String address;
-    
-    @NotNull @NotEmpty @Size(min = 4)
-    @Column(name="country", unique = true, nullable = false)
-    private String country;
-    
-    @NotNull @NotEmpty @Size(min = 4)
-    @Column(name="email", unique = true, nullable = false)
-    private String email;
-    
-    @NotNull @NotEmpty @Size(min = 11)
-    @Column(name="mobile_no", unique = true, nullable = false)
-    private String mobile_no;
-    
-    @NotNull @NotEmpty 
-    @Column(name="dateofbirth", unique = true, nullable = false)
-    private String dateofbirth;
-    
-    @NotNull @NotEmpty 
-    @Column(name="picture", unique = true, nullable = false)
-    private String picture;
-    
-     @NotNull @NotEmpty 
-    @Column(name="status", unique = true, nullable = false)
-    private String status;
+	@Id
+	@GeneratedValue(generator = "system-uuid")
+	@GenericGenerator(name = "system-uuid", strategy = "uuid")
+	private String id;
 
-    public String getIduser() {
-        return iduser;
-    }
+	@NotNull @NotEmpty @Size(max = 10)
+	@Column(name = "username", unique = true, nullable = false)
+	private String username;
 
-    public void setIduser(String iduser) {
-        this.iduser = iduser;
-    }
+	@NotNull @NotEmpty @Size(max = 10)
+	@Column(name = "password", nullable = false)
+	private String password;
 
-    public String getUsername() {
-        return username;
-    }
+	@NotNull @NotEmpty @Size(max = 50)
+	@Column(name = "fullname", nullable = false)
+	private String fullname;
 
-    public void setUsername(String username) {
-        this.username = username;
-    }
+	@NotNull @NotEmpty @Size(min = 4)
+	@Column(name = "address", nullable = false)
+	private String address;
 
-    public String getPassword() {
-        return password;
-    }
+	@NotNull @NotEmpty @Size(min = 4)
+	@Column(name = "country", nullable = false)
+	private String country;
 
-    public void setPassword(String password) {
-        this.password = password;
-    }
+	@NotNull @NotEmpty @Size(min = 4)
+	@Column(name = "email", unique = true, nullable = false)
+	private String email;
 
-    public String getFullname() {
-        return fullname;
-    }
+	@NotNull @NotEmpty @Size(min = 11)
+	@Column(name = "mobile_no", nullable = false)
+	private String mobile_no;
 
-    public void setFullname(String fullname) {
-        this.fullname = fullname;
-    }
+	@NotNull @NotEmpty
+	@Column(name = "dateofbirth", nullable = false)
+	private Date dateofbirth;
 
-    public String getAddress() {
-        return address;
-    }
+	@NotNull @NotEmpty
+	@Column(name = "picture", nullable = false)
+	private String picture;
 
-    public void setAddress(String address) {
-        this.address = address;
-    }
+	@NotNull @NotEmpty
+	@Column(name = "status", nullable = false)
+	private String status;
 
-    public String getCountry() {
-        return country;
-    }
+	public String getUsername() {
+		return username;
+	}
 
-    public void setCountry(String country) {
-        this.country = country;
-    }
+	public void setUsername(String username) {
+		this.username = username;
+	}
 
-    public String getEmail() {
-        return email;
-    }
+	public String getPassword() {
+		return password;
+	}
 
-    public void setEmail(String email) {
-        this.email = email;
-    }
+	public void setPassword(String password) {
+		this.password = password;
+	}
 
-    public String getMobile_no() {
-        return mobile_no;
-    }
+	public String getFullname() {
+		return fullname;
+	}
 
-    public void setMobile_no(String mobile_no) {
-        this.mobile_no = mobile_no;
-    }
+	public void setFullname(String fullname) {
+		this.fullname = fullname;
+	}
 
-    public String getDateofbirth() {
-        return dateofbirth;
-    }
+	public String getAddress() {
+		return address;
+	}
 
-    public void setDateofbirth(String dateofbirth) {
-        this.dateofbirth = dateofbirth;
-    }
+	public void setAddress(String address) {
+		this.address = address;
+	}
 
-    public String getPicture() {
-        return picture;
-    }
+	public String getCountry() {
+		return country;
+	}
 
-    public void setPicture(String picture) {
-        this.picture = picture;
-    }
+	public void setCountry(String country) {
+		this.country = country;
+	}
 
-    public String getStatus() {
-        return status;
-    }
+	public String getEmail() {
+		return email;
+	}
 
-    public void setStatus(String status) {
-        this.status = status;
-    }
-   
-    
-    
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getMobile_no() {
+		return mobile_no;
+	}
+
+	public void setMobile_no(String mobile_no) {
+		this.mobile_no = mobile_no;
+	}
+
+	public Date getDateofbirth() {
+		return dateofbirth;
+	}
+
+	public void setDateofbirth(Date dateofbirth) {
+		this.dateofbirth = dateofbirth;
+	}
+
+	public String getPicture() {
+		return picture;
+	}
+
+	public void setPicture(String picture) {
+		this.picture = picture;
+	}
+
+	public String getStatus() {
+		return status;
+	}
+
+	public void setStatus(String status) {
+		this.status = status;
+	}
+
 }
