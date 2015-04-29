@@ -1,0 +1,1 @@
+delete from member where id like 'test-%';

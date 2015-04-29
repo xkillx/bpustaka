@@ -1,0 +1,1 @@
+INSERT INTO `bpustaka`.`member` (`id`, `username`, `password`, `fullname`, `address`, `country`, `email`, `mobile_no`, `dateofbirth`, `picture`, `status`) VALUES ('test-123', 'azhar', 'password', 'Azhar Khalid', 'Bekasi', 'Indonesia', 'azhar.tkjzone@gmail.com', '08567518665', '1993-5-6', 'picture.jpg', 'Member');
